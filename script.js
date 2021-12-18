@@ -1,12 +1,7 @@
-var p1 = Number(prompt("Please enter the price of product..."))
-var p2 = Number(prompt("Please enter the price of product..."))
-var p3 = Number(prompt("Please enter the price of product..."))
-var p4 = Number(prompt("Please enter the price of product..."))
-var p5 = Number(prompt("Please enter the price of product..."))
+var allPrices = 0
 
-var sum = p1 + p2 + p3 + p4 + p5
-
-for (i = 0; i <= 5; i++){
+for(var i = 0; i < 5; i++) {
+    allPrices = allPrices + Number(prompt("enter your price ..."))
 }
 
-alert(sum)
+alert("all price of your basket :" + allPrices)
