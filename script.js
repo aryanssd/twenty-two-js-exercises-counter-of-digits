@@ -1,5 +1,3 @@
-var username = "amir hossein"
-
-for(var i = 0; i < username.length; i++){
-    console.log(i, " => ", username[i]);
+for(var i = 0; i <= 100; i += 2){
+    console.log(i)
 }
