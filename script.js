@@ -1,9 +1,8 @@
-var numberAvg = 0
+var allPrices = 0
 
-for ( var i = 0; i < 5; i++){
-    numberAvg = numberAvg + Number(prompt("enter the number"))
+for (var i = 0; i < 5; i++) {
+    var allPrices = allPrices + Number(prompt("please enter your product price : ) "))
+    
 }
 
-var finalAvg = numberAvg / i
-
-alert(finalAvg)
+alert("your product prices are : " + allPrices + " toman")
