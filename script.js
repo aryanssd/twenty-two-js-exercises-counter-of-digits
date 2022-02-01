@@ -1,8 +1,10 @@
-var allPrices = 0
+var userNumber = null 
+var sum = 0
 
-for (var i = 0; i < 5; i++) {
-    var allPrices = allPrices + Number(prompt("please enter your product price : ) "))
-    
+for(var i = 0 ; i <5 ; i++){
+    userNumber = Number(prompt("Enter The " +(i + 1) + "Number"))
+
+    sum = sum + userNumber
 }
 
-alert("your product prices are : " + allPrices + " toman")
+console.log("Average: " + (sum / 5));
