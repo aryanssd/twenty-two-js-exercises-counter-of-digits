@@ -1,10 +1,12 @@
-var userNumber = null 
-var sum = 0
+var userNumber = Number(prompt("Enter The Number " , 0))
 
-for(var i = 0 ; i <5 ; i++){
-    userNumber = Number(prompt("Enter The " +(i + 1) + "Number"))
+var sum = 0 
 
-    sum = sum + userNumber
+for (var i = 0; (userNumber / 10 ) != 0; i++) {
+
+    sum = sum + (userNumber % 10)
+    userNumber = Math.floor(userNumber / 10)
+
 }
 
-console.log("Average: " + (sum / 5));
+alert("Sum Of The Digits " + sum);
