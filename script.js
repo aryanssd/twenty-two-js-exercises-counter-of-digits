@@ -1,12 +1,13 @@
-var userNumber = Number(prompt("Enter The Number " , 0))
+var userNumber = Number(prompt("enter the number : " , 0))
 
-var sum = 0 
+var counter = 0;
 
-for (var i = 0; (userNumber / 10 ) != 0; i++) {
-
-    sum = sum + (userNumber % 10)
-    userNumber = Math.floor(userNumber / 10)
-
+if (userNumber == 0) {
+    counter = 1
+} else {
+    for (var i = 0; userNumber / 10 != 0; i++){
+        counter++;
+        userNumber = Math.floor(userNumber / 10);
+    }
 }
-
-alert("Sum Of The Digits " + sum);
+alert("count of digits : " + counter)
